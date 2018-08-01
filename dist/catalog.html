@@ -1,0 +1,628 @@
+<!-- author Darkywa https://github.com/darkywa/ -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Каталог товаров</title>
+
+	<!-- стили -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+	<!-- библиотеки -->
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/custom-range.css"> <!-- кастомные стили для цены -->
+</head>
+<body>
+	
+	<!-- header -->
+	<header id="header" class="header header-inner"><!-- header-inner для стилей внутренних -->
+		<div class="container">
+			<div class="row">
+
+				<div class="header__wrap">
+
+					<!-- logo -->
+					<div class="header__logo">
+						<a href="/" title="device">DEVICE</a>
+					</div>
+					<!-- end logo -->
+
+					<!-- control -->
+					<div class="header__control">
+
+						<!-- control left -->
+						<div class="header__control-left">
+							<form method="get" action="/" class="form-search">
+								<div class="form-search__item">
+									<label>
+										<img for="top-search" src="svg/search.svg" alt="поиск">
+									</label>
+									<input type="text" name="s" id="top-search" placeholder="Поиск по сайту...">
+									<button type="submit" class="form-search__button">Найти</button>
+								</div>
+							</form>
+						</div>
+						<!-- end control left -->
+
+						<!-- control right -->
+						<div class="header__control-right">
+							<div class="header__control-right-item header__control-right-item-first">
+								<span>
+									<img src="svg/user.svg" alt="личный кабинет">
+								</span>
+								<a href="#0" title="Войти">Валентин Петухов</a>
+								<a href="#0" class="header__control-logout">Выйти</a>
+							</div>
+							<div class="header__control-right-item">
+								<span>
+									<img src="svg/compare.svg" alt="Сравнить">
+								</span>
+								<a href="#0" title="Сравнить">Сравнить</a>
+							</div>
+							<div class="header__control-right-item">
+								<span>
+									<img src="svg/cart.svg" alt="Корзина">
+								</span>
+								<a href="#0" title="Корзина">Корзина</a>
+							</div>
+						</div>
+						<!-- end control right -->
+
+					</div>
+					<!-- end control -->
+
+					<!-- header menu -->
+					<div class="header__menu">
+
+						<!-- header menu left -->
+						<nav class="header__menu-left">
+							<div class="header__menu-item">
+								<div class="header__menu-item-title">
+									<a href="catalog.html" title="каталог товаров">
+										каталог товаров
+										<img src="svg/plus.svg" alt="каталог товаров">
+									</a>
+								</div>
+								<div class="header__menu-catalog-list">
+									<div class="header__menu-catalog-column">
+										<div class="header__menu-catalog-item">
+											<a href="#0" title="Виртуальная реальность">Виртуальная реальность</a>
+										</div>
+										<div class="header__menu-catalog-item">
+											<a href="#0" title="Моноподы для селфи">Моноподы для селфи</a>
+										</div>
+										<div class="header__menu-catalog-item">
+											<a href="#0" title="Экшн-камеры">Экшн-камеры</a>
+										</div>
+									</div>
+									<div class="header__menu-catalog-column">
+										<div class="header__menu-catalog-item">
+											<a href="#0" title="Фитнес-браслеты">Фитнес-браслеты</a>
+										</div>
+										<div class="header__menu-catalog-item">
+											<a href="#0" title="Умные часы">Умные часы</a>
+										</div>
+									</div>
+									<div class="header__menu-catalog-column">
+										<div class="header__menu-catalog-item">
+											<a href="#0" title="Квадрокоптеры">Квадрокоптеры</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</nav>
+						<!-- end header menu left -->
+
+						<!-- header menu right -->
+						<nav class="header__menu-right">
+							<div class="header__menu-item">
+								<div class="header__menu-item-title">
+									<a href="#0" title="Доставка">
+										Доставка
+									</a>
+								</div>
+							</div>
+							<div class="header__menu-item">
+								<div class="header__menu-item-title">
+									<a href="#0" title="Гарантия">
+										Гарантия
+									</a>
+								</div>
+							</div>
+							<div class="header__menu-item header__menu-item-contact">
+								<div class="header__menu-item-title">
+									<a href="#0" title="Контакты">
+										Контакты
+									</a>
+								</div>
+							</div>
+						</nav>
+						<!-- end header menu right -->
+
+					</div>
+					<!-- end header menu -->
+
+				</div><!-- wrap -->
+
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+
+	<!-- page-title -->
+	<div id="page-title" class="page-title">
+		<div class="container">
+			<div class="row">
+				<h1>Моноподы для селфи</h1>
+			</div>
+		</div>
+	</div>
+	<!-- end page-title -->
+
+	<!-- breadcrumbs -->
+	<div id="breadcrumbs" class="breadcrumbs">
+		<div class="container">
+			<div class="row">
+				<div class="breadcrumbs__wrap">
+					<ul aria-label="Breadcrumb" class="breadcrumbs__list">
+						<li>
+							<a href="#0" title="">
+								Главная
+							</a>
+						</li>
+						<li>
+							<a href="#0" title="">
+								Каталог товаров
+							</a>
+						</li>
+						<li>
+							<a href="#0" title="" aria-current="page">
+								Моноподы для селфи
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end breadcrumb -->
+
+	<!-- site content -->
+	<div id="inner-page" class="inner-page">
+		<div class="container">
+			<div class="row">
+				<div class="inner-page__wrap">
+
+					<!-- sidebar -->
+					<div class="site-sidebar">
+						<aside class="sidebar">
+							<div class="sidebar__title">
+								Фильтр:
+							</div>
+							<div class="sidebar__filter">
+								<form class="sidebar__form">
+									<div class="sidebar__form-item">
+										<div class="sidebar__form-title">
+											Стоимость
+										</div>
+										<div class="sidebar__form-field">
+											<div id="slider-range"></div>
+											<input type="text" id="amount" readonly>
+										</div>
+									</div>
+									<div class="sidebar__form-item sidebar__form-checkbox">
+										<div class="sidebar__form-title">
+											Цвет
+										</div>
+										<div class="sidebar__form-field">
+											<input type="checkbox" id="a1a" checked="" name="a1">
+											<label for="a1a">Черный</label>
+										</div>
+										<div class="sidebar__form-field">
+											<input type="checkbox" id="a2a" name="a2">
+											<label for="a2a">Белый</label>
+										</div>
+										<div class="sidebar__form-field">
+											<input type="checkbox" id="a3a" checked="" name="a3">
+											<label for="a3a">Синий</label>
+										</div>
+										<div class="sidebar__form-field">
+											<input type="checkbox" id="a4a" checked="" name="a4">
+											<label for="a4a">Красный</label>
+										</div>
+										<div class="sidebar__form-field">
+											<input type="checkbox" id="a5a" name="a5">
+											<label for="a5a">Розовый</label>
+										</div>
+									</div>
+									<div class="sidebar__form-item sidebar__form-checkbox">
+										<div class="sidebar__form-title">
+											Bluetooth
+										</div>
+										<div class="sidebar__form-field">
+											<input type="radio" id="b1a" checked="" name="b1">
+											<label for="b1a">Есть</label>
+										</div>
+										<div class="sidebar__form-field">
+											<input type="radio" id="b1b" name="b1">
+											<label for="b1b">Нет</label>
+										</div>
+									</div>
+									<div class="sidebar__form-item sidebar__form-item-button">
+										<button type="submit" class="btn-default btn-filter">
+											<span>Показать</span>
+										</button>
+									</div>
+								</form>
+							</div>
+						</aside>
+					</div>
+					<!-- end sidebar -->
+
+					<!-- contetn -->
+					<div class="site-content">
+						<main class="content">
+
+							<!-- sort -->
+							<div class="content__sort">
+								<div class="content__sort-label">
+									Сортировка:
+								</div>
+								<div class="content__sort-links">
+									<a href="#0" class="active">
+										По цене
+									</a>
+									<a href="#0">
+										По типу
+									</a>
+									<a href="#0">
+										По популярности
+									</a>
+								</div>
+								<div class="content__sort-desc">
+									<a href="#0" class="active">
+										<img src="svg/icon-up-dir.svg">
+									</a>
+									<a href="#0">
+										<img src="svg/icon-down-dir.svg">
+									</a>
+								</div>
+							</div>
+							<!-- end sort -->
+
+							<!-- products -->
+							<div class="contetn__products">
+
+								<!-- item -->
+								<article class="contetn__products-item">
+
+									<!-- image -->
+									<div class="contetn__products-image">
+										<img src="img/product-1.jpg" alt="товар">
+
+										<!-- control -->
+										<div class="contetn__products-control">
+											<div class="contetn__products-control-wrap">
+												<a href="#0" class="btn-default btn-add-cart">
+													<span>В корзину</span>
+												</a>
+												<a href="#0" class="btn-add-compare">
+													Добавить к сравнению
+												</a>
+											</div>
+										</div>
+										<!-- end control -->
+
+									</div>
+									<!-- end image -->
+
+									<!-- name and price -->
+									<div class="contetn__products-name">
+										<div class="contetn__products-link">
+											<a href="#0">Любительская селфи-палка</a>
+										</div>
+										<div class="contetn__products-price">
+											500 руб.
+										</div>
+									</div>
+									<!-- end name and price -->
+
+								</article>
+								<!-- end item -->
+
+								<!-- item -->
+								<article class="contetn__products-item">
+
+									<!-- image -->
+									<div class="contetn__products-image">
+										<img src="img/product-2.jpg" alt="товар">
+
+										<!-- control -->
+										<div class="contetn__products-control">
+											<div class="contetn__products-control-wrap">
+												<a href="#0" class="btn-default btn-add-cart">
+													<span>В корзину</span>
+												</a>
+												<a href="#0" class="btn-add-compare">
+													Добавить к сравнению
+												</a>
+											</div>
+										</div>
+										<!-- end control -->
+
+									</div>
+									<!-- end image -->
+
+									<!-- name and price -->
+									<div class="contetn__products-name">
+										<div class="contetn__products-link">
+											<a href="#0">Профессиональная селфи-палка</a>
+										</div>
+										<div class="contetn__products-price">
+											1 500 руб.
+										</div>
+									</div>
+									<!-- end name and price -->
+
+								</article>
+								<!-- end item -->
+
+								<!-- item -->
+								<article class="contetn__products-item">
+
+									<!-- image -->
+									<div class="contetn__products-image">
+										<img src="img/product-3.jpg" alt="товар">
+
+										<!-- control -->
+										<div class="contetn__products-control">
+											<div class="contetn__products-control-wrap">
+												<a href="#0" class="btn-default btn-add-cart">
+													<span>В корзину</span>
+												</a>
+												<a href="#0" class="btn-add-compare">
+													Добавить к сравнению
+												</a>
+											</div>
+										</div>
+										<!-- end control -->
+
+									</div>
+									<!-- end image -->
+
+									<!-- name and price -->
+									<div class="contetn__products-name">
+										<div class="contetn__products-link">
+											<a href="#0">Непотопляемая селфи-палка</a>
+										</div>
+										<div class="contetn__products-price">
+											2 500 руб.
+										</div>
+									</div>
+									<!-- end name and price -->
+
+								</article>
+								<!-- end item -->
+
+								<!-- item -->
+								<article class="contetn__products-item">
+
+									<!-- image -->
+									<div class="contetn__products-image">
+										<img src="img/product-2.jpg" alt="товар">
+
+										<!-- control -->
+										<div class="contetn__products-control">
+											<div class="contetn__products-control-wrap">
+												<a href="#0" class="btn-default btn-add-cart">
+													<span>В корзину</span>
+												</a>
+												<a href="#0" class="btn-add-compare">
+													Добавить к сравнению
+												</a>
+											</div>
+										</div>
+										<!-- end control -->
+
+									</div>
+									<!-- end image -->
+
+									<!-- name and price -->
+									<div class="contetn__products-name">
+										<div class="contetn__products-link">
+											<a href="#0">Селфи-палка «Следуй за мной»</a>
+										</div>
+										<div class="contetn__products-price">
+											4 900 руб.
+										</div>
+									</div>
+									<!-- end name and price -->
+
+								</article>
+								<!-- end item -->
+
+							</div>
+							<!-- end products -->
+
+							<!-- pagination -->
+							<div class="content__pagination">
+								<div class="content__pagination-prev">
+									<a href="#0">назад</a>
+								</div>
+								<div class="content__pagination-pages">
+									<a href="#0" class="current">1</a>
+									<a href="#0">2</a>
+									<a href="#0">3</a>
+								</div>
+								<div class="content__pagination-next">
+									<a href="#0">вперед</a>
+								</div>
+							</div>
+							<!-- end pagination -->
+
+						</main>
+					</div>
+					<!-- end contetn -->
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end site content -->
+
+	<!-- footer -->
+	<footer id="footer" class="footer footer-inner"> <!-- footer-inner Для стилей на внутренних -->
+		<div class="container">
+			<div class="row">
+				<div class="footer__wrap">
+
+					<!-- top -->
+					<div class="footer__top">
+						<div class="footer__logo">
+							<a href="/">DEVICE</a>
+						</div>
+						<div class="footer__control-right">
+							<div class="footer__control-right-item">
+								<span>
+									<img src="svg/user-footer.svg" alt="личный кабинет">
+								</span>
+								<a href="#0" title="Войти">Валентин Петухов</a>
+								<a href="#0" class="footer__control-logout">Выйти</a>
+							</div>
+							<div class="footer__control-right-item">
+								<span>
+									<img src="svg/compare-footer.svg" alt="Сравнить">
+								</span>
+								<a href="#0" title="Сравнить">Сравнить</a>
+							</div>
+							<div class="footer__control-right-item">
+								<span>
+									<img src="svg/cart-footer.svg" alt="Корзина">
+								</span>
+								<a href="#0" title="Корзина">Корзина</a>
+							</div>
+						</div>
+					</div>
+					<!-- end top -->
+
+					<!-- mid -->
+					<div class="footer__mid">
+						<div class="footer__address">
+							г. Москва, ул. Строителей, 15
+						</div>
+						<nav class="footer__menu-right">
+							<div class="footer__menu-item">
+								<div class="footer__menu-item-title">
+									<a href="#0" title="Доставка">
+										Доставка
+									</a>
+								</div>
+							</div>
+							<div class="footer__menu-item">
+								<div class="footer__menu-item-title">
+									<a href="#0" title="Гарантия">
+										Гарантия
+									</a>
+								</div>
+							</div>
+							<div class="footer__menu-item">
+								<div class="footer__menu-item-title">
+									<a href="#0" title="Контакты">
+										Контакты
+									</a>
+								</div>
+							</div>
+						</nav>
+						<div class="footer__phone">
+							<a href="tel:+7 (495) 495-95-95">Тел.: +7 (495) 495-95-95</a>
+						</div>
+					</div>
+					<!-- end mid -->
+
+					<!-- bot -->
+					<div class="footer__bot">
+						<div class="footer__left-line"></div>
+						<div class="footer__social">
+							<a href="#0">
+								<img src="svg/fb.svg" alt="фейсбук">
+							</a>
+							<a href="#0">
+								<img src="svg/vk.svg" alt="вконтакте">
+							</a>
+							<a href="#0">
+								<img src="svg/twitter.svg" alt="твитер">
+							</a>
+						</div>
+						<div class="footer__other-logo">
+							<a href="#0"><img src="svg/logo-html.svg" alt="логотип"></a>
+						</div>
+					</div>
+					<!-- end bot -->
+
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+
+	<!-- whrite us -->
+	<div class="write-us" style="display: none;">
+		<div class="write-us__overlay"></div>
+		<div class="write-us__content">
+			<div class="write-us__close">
+				<a class="closeWriteUs" href="#0" title="закрыть окно">
+					<img src="svg/modal-close.svg" alt="закрыть окно">
+				</a>
+			</div>
+			<form id="write-us-form">
+				<div class="write-us-form__row">
+					<div class="write-us-form__item">
+						<label>Ваше имя:</label>
+						<input type="text" name="name" placeholder="Имя Фамилия">
+					</div>
+					<div class="write-us-form__item">
+						<label>Ваш e-mail:</label>
+						<input type="text" name="email" placeholder="email@example.com">
+					</div>
+				</div>
+				<div class="write-us-form__row">
+					<div class="write-us-form__item write-us-form__item-textarea">
+						<label>Текст письма:</label>
+						<textarea name="message" placeholder="В свободной форме"></textarea>
+					</div>
+				</div>
+				<div class="write-us-form__row">
+					<div class="write-us-form__button">
+						<button type="submit" class="btn-default btn-write-us"><span>Отправить</span></button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- end write us -->
+
+	<!-- библиотеки -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript">
+		$( function() {
+		    $( "#slider-range" ).slider({
+		      range: true,
+		      min: 0,
+		      max: 500,
+		      values: [ 75, 300 ],
+		      slide: function( event, ui ) {
+		        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+		      }
+		    });
+		    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+		      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+		  } );
+	</script>
+
+	<!-- скрипты -->
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
